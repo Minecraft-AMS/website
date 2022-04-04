@@ -3,19 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: A Minecraft Server
 subtitle:
 description:
 keywords:
-author: John Doe
-language:
-timezone:
+author: AMS Development Team
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://mcams.club/
 root: /
-permalink: :year/:month/:day/:title/
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+permalink: :hash/
 permalink_defaults:
 
 # Directory
@@ -79,3 +82,7 @@ theme: acorn
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+clean_css:
+  exclude:
+    - *.min.css
