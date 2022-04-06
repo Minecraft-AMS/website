@@ -1,0 +1,22 @@
+## 企业文化
+# name:         标题
+# en_name:      英文标题
+# description:  描述内容
+# cover:        封面图片路径
+# cover_size:   封面图片大小
+# link:         链接路径，无链接为空即可
+#
+- name: 第一段
+  en_name: 
+  description: 想写什么写什么
+  feather: arrow-down-circle
+
+- name: 第二段
+  en_name: 
+  description: 想写什么写什么
+  feather: archive
+
+- name: 第三段
+  en_name: 
+  description: 想写什么写什么
+  feather: activity
