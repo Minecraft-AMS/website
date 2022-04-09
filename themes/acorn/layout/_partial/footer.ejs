@@ -3,17 +3,17 @@
     <div class="py-3">
       <div class="row justify-content-between">
         <div class="col-6">
-          <img class="mb-3" height="40" src="<%- url_for(theme.brand) %>" alt="<%= config.title %>" role="img">
-          <p class="mb-4"><%= config.description %></p>
           <ul class="list-inline">
             <% for (var item in site.data.contact){%>
               <li class="list-inline-item">
+                <img class="mb-3-margins" height="40" src="<%- url_for(theme.brand) %>" alt="<%= config.title %>" role="img">
                 <a href="<%=site.data.contact[item]['link'] %>">
                   <%- image_tag(site.data.contact[item]['icon'], [site.data.contact[item]['name']]) %>
                 </a>
               </li>
             <%} %>
           </ul>
+          <p class="mb-4"><%= config.description %></p>
         </div>
         <div class="col-4">
           <h5>友情链接</h5>
