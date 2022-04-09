@@ -7,12 +7,12 @@
 
 @keyframes anis {
     100% {
-        transform: translateY(-200px);
+        transform: translateY(-815px);
     }
 }
 
 .carousel {
-    animation: anis 10s linear infinite;
+    animation: anis 16s linear infinite;
 }
 
 .carousel:hover {
