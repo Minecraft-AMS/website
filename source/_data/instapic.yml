@@ -1,30 +1,14 @@
-## 客户 LOGO 墙
-# name:         客户名称
-# cover:        客户 LOGO 路径
-#
-- name: LOGO
-  cover: /images/brand.svg
+- name: Minecraft
+  cover: /images/instapic/minecraft.svg
 
-- name: LOGO
-  cover: /images/brand.svg
+- name: Fabric
+  cover: /images/instapic/fabric.png
 
-- name: LOGO
-  cover: /images/brand.svg
+- name: CarpetMod
+  cover: /images/instapic/carpet.png
 
-- name: LOGO
-  cover: /images/brand.svg
+- name: MCDReforged
+  cover: /images/instapic/mcdreforged.png
 
-- name: LOGO
-  cover: /images/brand.svg
-
-- name: LOGO
-  cover: /images/brand.svg
-
-- name: LOGO
-  cover: /images/brand.svg
-
-- name: LOGO
-  cover: /images/brand.svg
-
-- name: LOGO
-  cover: /images/brand.svg
+- name: Github
+  cover: /images/instapic/github.png

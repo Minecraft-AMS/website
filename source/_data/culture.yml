@@ -1,22 +1,11 @@
-## 企业文化
-# name:         标题
-# en_name:      英文标题
-# description:  描述内容
-# cover:        封面图片路径
-# cover_size:   封面图片大小
-# link:         链接路径，无链接为空即可
-#
-- name: 第一段
-  en_name: 
-  description: 想写什么写什么
-  feather: arrow-down-circle
+- name: 语音沟通
+  description: 我们鼓励玩家使用语音交流，优化协同程度，推进工程进展。
+  feather: mic
 
-- name: 第二段
-  en_name: 
-  description: 想写什么写什么
-  feather: archive
+- name: 群体氛围
+  description: 我们的成员都很友善，氛围活跃，来这里找到新的朋友。
+  feather: users
 
-- name: 第三段
-  en_name: 
-  description: 想写什么写什么
-  feather: activity
+- name: 时刻在线
+  description: 我们的服务器24小时在线，优秀运维团队实时维护，保证游玩体验。
+  feather: zap
