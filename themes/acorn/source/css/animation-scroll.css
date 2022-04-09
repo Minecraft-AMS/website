@@ -1,0 +1,20 @@
+.carousel-frame {
+    max-height: 240px;
+    overflow: hidden;
+    margin: auto;
+    position: inherit;
+}
+
+@keyframes anis {
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+.carousel {
+    animation: anis 10s linear infinite;
+}
+
+.carousel:hover {
+    animation-play-state: paused;
+}
