@@ -1,3 +1,8 @@
+- name: instapic
+  title: 技术
+  subtitle: 服务器技术展示
+  partial: instapic
+
 - name: quotation
   title: 一言
   subtitle: 服务器玩家语录
@@ -7,8 +12,4 @@
   title: 画廊
   subtitle: 服务器景观实拍 
   partial: album
-
-- name: instapic
-  title: 技术
-  subtitle: 服务器技术展示
-  partial: instapic
+  

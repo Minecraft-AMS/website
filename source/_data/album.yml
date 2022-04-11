@@ -1,4 +1,29 @@
-- name: 还没想好要写什么
-  en_name: ENGLISH TITLE 1
-  description: 披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。渔舟唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。
-  cover: /images/instapic/mcdreforged.png
+- name: 家养哞菇与守卫者
+  en_name: PET MOOSHROOM & GUARDIAN
+  description: 深情对视的 Minecraft 特产。
+  cover: /images/album/pet_mooshroom_and_guardian.png
+
+- name: 家养烈焰人
+  en_name: PET BLAZE
+  description: 入住仓库的时候把屋子点着了。
+  cover: /images/album/pet_blaze.png
+
+- name: 某只鸽子
+  en_name: RANDOM PERSON
+  description: XavierWah 完成了此站点的大部分工作。
+  cover: /images/album/random_person.png
+
+- name: 地狱交通
+  en_name: NETHER HUB
+  description: 还在缓慢向世界各处伸展。
+  cover: /images/album/nether_hub.png
+
+- name: 基地地图
+  en_name: BASEMENT MAP
+  description: 2022 年 4 月 10 日的景象。
+  cover: /images/album/basement_map.png
+
+- name: 家猫
+  en_name: PET CATS
+  description: 百猫全书。
+  cover: /images/album/pet_cats.png
