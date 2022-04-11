@@ -1,5 +1,5 @@
 ![Hexo](https://github.com/vercel/vercel/blob/main/packages/frameworks/logos/hexo.svg)
-![AMS](/source/favicon.ico)
+<img src="/source/favicon.ico" alt="AMS" style="max-width: 100%; width: 48px;">
 
 # Official Website of Minecraft-AMS
 
