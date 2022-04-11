@@ -4,17 +4,26 @@
       <div class="row justify-content-between">
         <div class="col-6">
           <ul class="list-inline">
-            <% for (var item in site.data.contact){%>
-              <li class="list-inline-item">
-                <img class="mb-3-margins" height="40" src="<%- url_for(theme.brand) %>" alt="<%= config.title %>" role="img">
-                <a href="<%=site.data.contact[item]['link'] %>">
-                  <%- image_tag(site.data.contact[item]['icon'], [site.data.contact[item]['name']]) %>
+            <li class="list-inline-item">
+              <img class="mb-3-margins" height="40" src="/favicon.ico" alt="A Minecraft Server" role="img" style="vertical-align: super;">
+              
+                <a target="_blank" rel="noopener" href="https://space.bilibili.com/25847233" style="">
+                  <img 0="哔哩哔哩" src="/images/contact/bilibili.svg">
                 </a>
-              </li>
-            <%} %>
+              
+                <a target="_blank" rel="noopener" href="https://github.com/Minecraft-AMS" style="vertical-align: super; margin-right: 0.38rem;">
+                  <img 0="Github" src="/images/contact/github.svg">
+                </a>
+
+                <a target="_blank" rel="noopener" href="https://afdian.net/@ams20220304" style="vertical-align: super;">
+                  <img 0="爱发电" src="/images/contact/afdian.svg">
+                </a>
+              
+            </li>
           </ul>
           <p class="mb-4"><%= config.description %></p>
         </div>
+        <!--
         <div class="col-4">
           <h5>友情链接</h5>
           <ul class="list-inline">
@@ -25,6 +34,7 @@
             <%} %>
           </ul>
         </div>
+        -->
       </div>
     </div>
     <hr class="hr" style="opacity: .25;">
@@ -34,7 +44,7 @@
         <% if (theme.beian.enable){ %>
           <li class="list-inline-item"><%- theme.beian.number %></li>
         <% } %>
-        <li class="list-inline-item"><%= __('Designed by') %> <a href="https://github.com/Minecraft-AMS" target="_blank"><%= config.author %></a></li>
+        <li class="list-inline-item"><%= __('Designed by') %> <%= config.author %></a></li>
       </ul>
     </div>
   </div>
