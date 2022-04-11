@@ -15,10 +15,6 @@
     animation: anis 16s linear infinite;
 }
 
-.carousel:hover {
-    animation-play-state: paused;
-}
-
 .mb-3-margins {
     margin: 0.35rem 0.5rem;
 }
