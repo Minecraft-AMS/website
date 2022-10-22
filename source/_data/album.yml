@@ -1,3 +1,38 @@
+- name: 贰肆新村
+  en_name: HOUSING ESTATE
+  description: 温暖的家。
+  cover: /images/album/housing_estate.png
+
+- name: 主世界猪人塔
+  en_name: PIGMAN FARM
+  description: 经验++。
+  cover: /images/album/pigman_farm.png
+
+- name: 珍珠炮
+  en_name: PEARL CANNON
+  description: 因果律禁止。
+  cover: /images/album/pearl_cannon.png
+
+- name: 工业区
+  en_name: INDUSTRIAL PARK
+  description: 污染气体排放量始终达标。
+  cover: /images/album/industrial_park.png
+
+- name: 全物品
+  en_name: MAIN STORAGE
+  description: 看照片不会掉帧。
+  cover: /images/album/main_storage.png
+
+- name: 某只鸽子
+  en_name: RANDOM PERSON
+  description: XavierWah 完成了此站点的大部分工作。
+  cover: /images/album/random_person.png
+
+- name: 家猫
+  en_name: PET CATS
+  description: 百猫全书。
+  cover: /images/album/pet_cats.png
+
 - name: 家养哞菇与守卫者
   en_name: PET MOOSHROOM & GUARDIAN
   description: 深情对视的 Minecraft 特产。
@@ -7,23 +42,3 @@
   en_name: PET BLAZE
   description: 入住仓库的时候把屋子点着了。
   cover: /images/album/pet_blaze.png
-
-- name: 某只鸽子
-  en_name: RANDOM PERSON
-  description: XavierWah 完成了此站点的大部分工作。
-  cover: /images/album/random_person.png
-
-- name: 地狱交通
-  en_name: NETHER HUB
-  description: 还在缓慢向世界各处伸展。
-  cover: /images/album/nether_hub.png
-
-- name: 基地地图
-  en_name: BASEMENT MAP
-  description: 2022 年 4 月 10 日的景象。
-  cover: /images/album/basement_map.png
-
-- name: 家猫
-  en_name: PET CATS
-  description: 百猫全书。
-  cover: /images/album/pet_cats.png
