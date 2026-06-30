@@ -1,52 +1,52 @@
 import { useState } from 'react';
 import { Server, Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
-interface NavbarProps {
-  currentPage: 'home' | 'about' | 'join';
-}
-
-export default function Navbar({ currentPage }: NavbarProps) {
+export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
-    { href: '/', label: '首页', active: currentPage === 'home' },
-    { href: '/about', label: '关于', active: currentPage === 'about' },
-    { href: '/join', label: '加入我们', active: currentPage === 'join' },
+    { path: '/', label: '首页' },
+    { path: '/about', label: '关于' },
+    { path: '/join', label: '加入我们' },
   ];
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1a1512]/80 backdrop-blur-sm border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-5">
           <div className="flex items-center justify-between">
-            <a href="/" className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-3">
               <div className="w-8 h-8 rounded flex items-center justify-center border border-[#c9a962]/30">
                 <Server className="w-4 h-4 text-[#c9a962]" />
               </div>
               <span className="text-[#c9a962] font-serif text-lg tracking-wider">A Minecraft Server</span>
-            </a>
+            </Link>
 
             <div className="hidden md:flex items-center gap-10">
               {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
+                <Link
+                  key={link.path}
+                  to={link.path}
                   className={`text-xs tracking-[0.2em] uppercase transition-colors ${
-                    link.active ? 'text-[#c9a962]' : 'text-gray-400 hover:text-[#c9a962]'
+                    isActive(link.path) ? 'text-[#c9a962]' : 'text-gray-400 hover:text-[#c9a962]'
                   }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
 
             <div className="hidden md:block">
-              <a
-                href="/join"
+              <Link
+                to="/join"
                 className="px-5 py-2.5 border border-[#c9a962]/50 text-[#c9a962] text-xs tracking-wider hover:bg-[#c9a962]/10 transition-all"
               >
-                {currentPage === 'join' ? '返回首页' : '加入服务器'}
-              </a>
+                {isActive('/join') ? '返回首页' : '加入服务器'}
+              </Link>
             </div>
 
             <button
@@ -67,25 +67,25 @@ export default function Navbar({ currentPage }: NavbarProps) {
       >
         <div className="flex flex-col items-center justify-center h-full gap-8">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
+            <Link
+              key={link.path}
+              to={link.path}
               onClick={() => setIsMobileMenuOpen(false)}
               className={`text-2xl font-serif tracking-[0.3em] uppercase transition-colors ${
-                link.active ? 'text-[#c9a962]' : 'text-gray-400 hover:text-[#c9a962]'
+                isActive(link.path) ? 'text-[#c9a962]' : 'text-gray-400 hover:text-[#c9a962]'
               }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <div className="mt-8">
-            <a
-              href="/join"
+            <Link
+              to="/join"
               onClick={() => setIsMobileMenuOpen(false)}
               className="px-8 py-4 bg-[#c9a962] text-black text-sm tracking-wider hover:bg-[#d4a373] transition-colors"
             >
               加入服务器
-            </a>
+            </Link>
           </div>
         </div>
       </div>

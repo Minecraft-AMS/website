@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import { EnergySphere } from '../components/EnergySphere';
 import Navbar from '../components/Navbar';
 import { ArrowRight, Server } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
@@ -33,7 +34,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#1a1512]">
-      <Navbar currentPage="home" />
+      <Navbar />
 
       <section
         id="hero"
@@ -60,13 +61,13 @@ export default function Home() {
 </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="/join"
+              <Link
+                to="/join"
                 className="group flex items-center gap-3 px-8 py-4 bg-[#c9a962] text-black text-sm tracking-wider hover:bg-[#d4a373] transition-colors"
               >
                 <span>立即加入</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

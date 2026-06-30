@@ -35,7 +35,7 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-[#1a1512]">
-      <Navbar currentPage="about" />
+      <Navbar />
 
       <section className="relative min-h-screen flex flex-col justify-end pb-32 px-6 pt-20">
         <div className="absolute inset-0">
