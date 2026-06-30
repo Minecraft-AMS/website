@@ -59,22 +59,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
-        <div className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-700 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
-          <button
-            onClick={() => {
-              const nextSection = document.querySelector('section.border-t');
-              if (nextSection) {
-                nextSection.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-            className="cursor-pointer hover:text-[#d4a373] transition-colors"
-          >
-            <svg className="w-8 h-8 text-[#c9a962] animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </button>
-        </div>
       </section>
 
       <footer className="py-12 px-6 border-t border-white/5">
