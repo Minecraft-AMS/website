@@ -1,9 +1,9 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Home from '@/pages/Home';
 import About from '@/pages/About';
 import Join from '@/pages/Join';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Home />,
@@ -16,9 +16,7 @@ const router = createBrowserRouter([
     path: '/join',
     element: <Join />,
   },
-], {
-  basename: '/website',
-});
+]);
 
 export default function App() {
   return <RouterProvider router={router} />;
