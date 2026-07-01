@@ -101,10 +101,10 @@ export function EnergySphere() {
         className="w-full h-full"
         style={{ background: 'transparent' }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#1a1512] via-transparent to-[#1a1512]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1a1512] via-transparent to-[#1a1512]" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1a1512] via-transparent to-[#1a1512]" />
-      <div className="absolute inset-0 bg-gradient-to-l from-[#1a1512] via-transparent to-[#1a1512]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#1a1512]/80 via-transparent to-[#1a1512]/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1a1512]/80 via-transparent to-[#1a1512]/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1a1512]/80 via-transparent to-[#1a1512]/80" />
+      <div className="absolute inset-0 bg-gradient-to-l from-[#1a1512]/80 via-transparent to-[#1a1512]/80" />
     </div>
   );
 }
