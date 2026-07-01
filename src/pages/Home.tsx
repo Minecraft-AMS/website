@@ -63,14 +63,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/join"
-                className="group flex items-center gap-3 px-8 py-4 bg-[#c9a962] text-black text-sm tracking-wider hover:bg-[#d4a373] transition-colors"
+                className="group flex-1 flex items-center justify-center gap-3 px-8 py-4 bg-[#c9a962] text-black text-sm tracking-wider hover:bg-[#d4a373] transition-colors"
               >
                 <span>立即加入</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/about"
-                className="flex items-center justify-center px-8 py-4 border border-[#c9a962]/50 text-[#c9a962] text-sm tracking-wider hover:bg-[#c9a962]/10 transition-all"
+                className="flex-1 flex items-center justify-center px-8 py-4 border border-[#c9a962]/50 text-[#c9a962] text-sm tracking-wider hover:bg-[#c9a962]/10 transition-all"
               >
                 关于我们
               </Link>
