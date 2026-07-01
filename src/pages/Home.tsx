@@ -68,6 +68,12 @@ export default function Home() {
                 <span>立即加入</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
+              <Link
+                to="/about"
+                className="px-8 py-4 border border-[#c9a962]/50 text-[#c9a962] text-sm tracking-wider hover:bg-[#c9a962]/10 transition-all"
+              >
+                关于我们
+              </Link>
             </div>
           </div>
         </div>
