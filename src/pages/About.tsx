@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { EnergySphere } from '../components/EnergySphere';
 import Navbar from '../components/Navbar';
+import { BackToTop } from '../components/BackToTop';
 import { Server } from 'lucide-react';
 
 export default function About() {
@@ -77,6 +78,8 @@ export default function About() {
           </div>
         </div>
       </footer>
+
+      <BackToTop />
     </div>
   );
 }

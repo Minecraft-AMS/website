@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { EnergySphere } from '../components/EnergySphere';
 import Navbar from '../components/Navbar';
+import { BackToTop } from '../components/BackToTop';
 import { ArrowRight, Server } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -95,6 +96,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      <BackToTop />
     </div>
   );
 }
