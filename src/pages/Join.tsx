@@ -35,14 +35,14 @@ export default function Join() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#1a1512]">
+    <div className="min-h-screen bg-[#1a1512] relative">
+      <div className="fixed inset-0 z-0">
+        <EnergySphere />
+      </div>
+
       <Navbar />
 
-      <section className="relative min-h-screen flex flex-col justify-end pb-32 px-6 pt-20">
-        <div className="absolute inset-0">
-          <EnergySphere />
-        </div>
-
+      <section className="relative min-h-screen flex flex-col justify-end pb-32 px-6 pt-20 z-10">
         <div className="relative max-w-6xl mx-auto w-full">
           <div className="scroll-reveal">
             <div className="inline-flex items-center gap-3 mb-8">
@@ -74,18 +74,14 @@ export default function Join() {
         </div>
       </section>
 
-      <section className="py-24 px-6 border-t border-white/5">
+      <section className="py-24 px-6 border-t border-white/5 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <div className="scroll-reveal">
-            <p className="text-gray-400 leading-relaxed mb-8">
-              我们十分欢迎新成员加入群体。但由于不可抗力因素，我们必须采用审核机制。
-            </p>
-
+          <div className="scroll-reveal bg-[#1a1512]/60 backdrop-blur-xl border border-white/10 rounded-2xl p-8 md:p-12">
             <h2 className="font-serif text-3xl md:text-4xl text-white mb-8">
               需要满足的基本条件
             </h2>
 
-            <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">
+            <ul className="space-y-4 text-gray-300 text-sm leading-relaxed">
               <li className="flex gap-3">
                 <span className="text-[#c9a962]">○</span>
                 <span>拥有国际正版 Minecraft 账号。</span>
@@ -132,25 +128,25 @@ export default function Join() {
               </li>
             </ul>
 
-            <p className="text-gray-400 text-sm leading-relaxed mt-8">
+            <p className="text-gray-300 text-sm leading-relaxed mt-8">
               若你满足以上要求，便可以加入审核群，针对你个人的特长（如红石、建筑等）接受进一步的审核。
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-24 px-6 border-t border-white/5">
+      <section className="py-24 px-6 border-t border-white/5 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <div className="scroll-reveal">
+          <div className="scroll-reveal bg-[#1a1512]/60 backdrop-blur-xl border border-white/10 rounded-2xl p-8 md:p-12">
             <h2 className="font-serif text-3xl md:text-4xl text-white mb-8">
               审核流程
             </h2>
 
-            <p className="text-gray-400 text-sm leading-relaxed mb-8">
+            <p className="text-gray-300 text-sm leading-relaxed mb-8">
               审核流程不是固定不变的，受服务器况、社区环境等各种因素影响，以下是基本的审核流程。
             </p>
 
-            <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">
+            <ul className="space-y-4 text-gray-300 text-sm leading-relaxed">
               <li className="flex gap-3">
                 <span className="text-[#c9a962]">○</span>
                 <span>在满足基本条件的情况下进入审核群。</span>
@@ -172,14 +168,14 @@ export default function Join() {
         </div>
       </section>
 
-      <section className="py-24 px-6 border-t border-white/5">
+      <section className="py-24 px-6 border-t border-white/5 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <div className="scroll-reveal">
+          <div className="scroll-reveal bg-[#1a1512]/60 backdrop-blur-xl border border-white/10 rounded-2xl p-8 md:p-12">
             <h2 className="font-serif text-3xl md:text-4xl text-white mb-8">
               审核群地址
             </h2>
 
-            <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">
+            <ul className="space-y-4 text-gray-300 text-sm leading-relaxed">
               <li className="flex gap-3">
                 <span className="text-[#c9a962]">○</span>
                 <span>腾讯 QQ</span>
@@ -197,7 +193,7 @@ export default function Join() {
         </div>
       </section>
 
-      <footer className="py-12 px-6 border-t border-white/5">
+      <footer className="py-12 px-6 border-t border-white/5 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
@@ -207,7 +203,7 @@ export default function Join() {
               <span className="text-[#c9a962] font-serif tracking-wider">A Minecraft Server</span>
             </div>
 
-            <div className="flex items-center gap-8 text-gray-600 text-xs tracking-wider">
+            <div className="flex items-center gap-8 text-gray-500 text-xs tracking-wider">
               <span>©2026 1024_byteeeee All rights reserved</span>
             </div>
           </div>

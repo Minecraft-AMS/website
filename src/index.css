@@ -108,3 +108,19 @@ html {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.glass-card {
+  background: rgba(26, 21, 18, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+.glass-card-light {
+  background: rgba(26, 21, 18, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}

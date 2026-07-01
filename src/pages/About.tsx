@@ -35,14 +35,14 @@ export default function About() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#1a1512]">
+    <div className="min-h-screen bg-[#1a1512] relative">
+      <div className="fixed inset-0 z-0">
+        <EnergySphere />
+      </div>
+
       <Navbar />
 
-      <section className="relative min-h-screen flex flex-col justify-end pb-32 px-6 pt-20">
-        <div className="absolute inset-0">
-          <EnergySphere />
-        </div>
-
+      <section className="relative min-h-screen flex flex-col justify-end pb-32 px-6 pt-20 z-10">
         <div className="relative max-w-6xl mx-auto w-full">
           <div className="scroll-reveal">
             <div className="inline-flex items-center gap-3 mb-8">
@@ -62,7 +62,7 @@ export default function About() {
         </div>
       </section>
 
-      <footer className="py-12 px-6 border-t border-white/5">
+      <footer className="py-12 px-6 border-t border-white/5 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
@@ -72,7 +72,7 @@ export default function About() {
               <span className="text-[#c9a962] font-serif tracking-wider">A Minecraft Server</span>
             </div>
 
-            <div className="flex items-center gap-8 text-gray-600 text-xs tracking-wider">
+            <div className="flex items-center gap-8 text-gray-500 text-xs tracking-wider">
               <span>©2026 1024_byteeeee All rights reserved</span>
             </div>
           </div>
