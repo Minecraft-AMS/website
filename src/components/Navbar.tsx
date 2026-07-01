@@ -41,12 +41,21 @@ export default function Navbar() {
             </div>
 
             <div className="hidden md:block">
-              <Link
-                to="/join"
-                className="px-5 py-2.5 border border-[#c9a962]/50 text-[#c9a962] text-xs tracking-wider hover:bg-[#c9a962]/10 transition-all"
-              >
-                {isActive('/join') ? '返回首页' : '加入服务器'}
-              </Link>
+              {isActive('/about') || isActive('/join') ? (
+                <Link
+                  to="/"
+                  className="px-5 py-2.5 border border-[#c9a962]/50 text-[#c9a962] text-xs tracking-wider hover:bg-[#c9a962]/10 transition-all"
+                >
+                  返回首页
+                </Link>
+              ) : (
+                <Link
+                  to="/join"
+                  className="px-5 py-2.5 border border-[#c9a962]/50 text-[#c9a962] text-xs tracking-wider hover:bg-[#c9a962]/10 transition-all"
+                >
+                  加入服务器
+                </Link>
+              )}
             </div>
 
             <button

@@ -70,7 +70,7 @@ export default function Home() {
               </Link>
               <Link
                 to="/about"
-                className="px-8 py-4 border border-[#c9a962]/50 text-[#c9a962] text-sm tracking-wider hover:bg-[#c9a962]/10 transition-all"
+                className="flex items-center justify-center px-8 py-4 border border-[#c9a962]/50 text-[#c9a962] text-sm tracking-wider hover:bg-[#c9a962]/10 transition-all"
               >
                 关于我们
               </Link>
