@@ -44,14 +44,14 @@ export default function Navbar() {
               {isActive('/about') || isActive('/join') ? (
                 <Link
                   to="/"
-                  className="px-5 py-2.5 border border-[#c9a962]/50 text-[#c9a962] text-xs tracking-wider hover:bg-[#c9a962]/10 transition-all"
+                  className="w-[100px] flex items-center justify-center px-5 py-2.5 border border-[#c9a962]/50 text-[#c9a962] text-xs tracking-wider hover:bg-[#c9a962]/10 transition-all"
                 >
                   返回首页
                 </Link>
               ) : (
                 <Link
                   to="/join"
-                  className="px-5 py-2.5 border border-[#c9a962]/50 text-[#c9a962] text-xs tracking-wider hover:bg-[#c9a962]/10 transition-all"
+                  className="w-[100px] flex items-center justify-center px-5 py-2.5 border border-[#c9a962]/50 text-[#c9a962] text-xs tracking-wider hover:bg-[#c9a962]/10 transition-all"
                 >
                   加入服务器
                 </Link>
